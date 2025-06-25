@@ -36,7 +36,8 @@ class MyException(Exception):
             error_message (Exception): The exception object containing the error message.
             error_detail (sys): The sys module for accessing the exception traceback.
         """
-        super().__init__(error_message_detail(error_message, error_detail))  # Call the base class constructor with the detailed error message  
+        super().__init__(error_message)  # Call the base class constructor with the detailed error message  
+        self.error_message = error_message_detail(error_message, error_detail)
 
     def __str__(self) -> str:
         """
@@ -45,4 +46,5 @@ class MyException(Exception):
         Returns:
             str: The detailed error message.
         """
-        return self.error_message_detail(error_message=self.args[0], error_detail=sys)  
+        return self.error_message
+        
