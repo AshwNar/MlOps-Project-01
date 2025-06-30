@@ -11,6 +11,7 @@ from src.exception import MyException
 from src.logger import logging
 from src.data_access.proj1_data import Proj1Data
 
+
 class DataIngestion:
     def __init__(self, data_ingestion_config: Optional[DataIngestionConfig] = None):
         try:
