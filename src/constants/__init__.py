@@ -69,6 +69,6 @@ MODEL_EVALUATION_CHANGE_THRESHOLD_SCORE: float = 0.02
 MODEL_BUCKET_NAME: str = "mlopsproj01"
 MODEL_PUSHER_S3_KEY: str = "model-registry"
 
-APP_HOST = "0.0.0"
+APP_HOST = "0.0.0.0"
 APP_PORT = 5000
 
